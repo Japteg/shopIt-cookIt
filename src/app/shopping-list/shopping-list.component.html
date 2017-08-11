@@ -2,8 +2,12 @@
   <div class="row">
     <div class="col-xs-10">
       <app-shopping-edit></app-shopping-edit>
-      <hr color=red>
-      <p>The List</p>
+      <hr>
+      <ul class="list-group">
+        <a style="cursor:ponter;" class="list-group-item" *ngFor="let ingredient of ingredients">
+          {{ ingredient.name }} ({{ ingredient.quantity}})
+        </a>
+      </ul>
     </div>
   </div>
 </div>
