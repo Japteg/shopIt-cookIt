@@ -8,7 +8,7 @@
 <div class="row">
     <div class="col-xs-12">
         <!-- recipes is the array containing all recipes where as [recipe] is taking value from that array and passing it to recipe-item component -->
-        <app-recipe-item *ngFor="let recipeEl of recipes" [recipe] = "recipeEl" (recipeSelected) = "onRecipeSelected(recipeEl)"></app-recipe-item>
+        <app-recipe-item *ngFor="let recipeEl of recipes" [recipe] = "recipeEl"></app-recipe-item>
     </div>
 </div>
 
